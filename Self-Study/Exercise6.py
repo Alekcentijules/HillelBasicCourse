@@ -9,8 +9,11 @@ elif user_input_operator == "-":
 elif user_input_operator == "*":
     print(f'Result: {user_input_first_num * user_input_second_num}')
 elif user_input_operator == "/":
-    print(f'Result: {user_input_first_num / user_input_second_num}')
-
-
+    if user_input_second_num != 0:
+        print(f'Result: {user_input_first_num / user_input_second_num}')
+    else:
+        print("Error: Division by zero is not allowed!")
+else:
+    print("Error: Invalid operator entered. Please use +, -, *, or /")
 
 
