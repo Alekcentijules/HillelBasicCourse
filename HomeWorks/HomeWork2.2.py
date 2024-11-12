@@ -12,5 +12,3 @@ print("Your result: ", result)
 
 
 
-
-
