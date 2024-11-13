@@ -1,16 +1,14 @@
 lst = [0, 1, 2, 3, 4, 5, 6]
-new_lst = []
 
-print(lst)
+if not lst:
+    print([])
 
-first_num = lst.pop(0)
-last_num = lst.pop()
+elif len(lst) == 1:
+    print(lst)
 
-new_lst.append(last_num)
-new_lst.extend(lst)
-new_lst.append(first_num)
-
-print(new_lst)
+elif lst:
+    reverse_lst = [lst[-1]] + lst[1:-1] + [lst[0]]
+    print(reverse_lst)
 
 
 
