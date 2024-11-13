@@ -38,7 +38,7 @@ print(first_list)
 
 first_list.insert(11, 11)
 
-print(first_list)
+print(first_list, "\n")
 
 
 del(first_list[0])
@@ -49,8 +49,8 @@ print(first_list)
 pip = first_list.pop()
 pap = first_list.pop(3)
 
-print(pip)
-print(pap)
+print("Pip", pip)
+print("Pap", pap)
 print(first_list)
 print(54 in first_list, "\n")
 
@@ -62,11 +62,11 @@ print(len(second_lst[0]), "\n")
 
 first_list.extend([22, 33, 55, 66, 77])
 
-print(first_list)
+print("Extend", first_list)
 
 first_list.append(22)
 
-print(first_list)
+print("Append", first_list)
 
 first_list.append([22, 33, 55, 66, 77])
 
