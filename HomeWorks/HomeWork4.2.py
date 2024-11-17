@@ -4,7 +4,7 @@ sum_lst = []
 # 2 solutions:
 
 
-#1
+# 1
 if not lst:
     print(0)
 
