@@ -32,7 +32,15 @@ elif user_input[0].isdigit():
     is_valid = False
 
 elif user_input.startswith("_") or user_input.endswith("_"):
-    is_valid = False
+    if user_input == "_":
+        is_valid = True
+
+    else:
+
+        is_valid = False
+
+# elif user_input == "_":
+#     print(True)
 
 elif "__" in user_input:
     is_valid = False
