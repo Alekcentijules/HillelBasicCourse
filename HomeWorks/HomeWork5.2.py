@@ -104,7 +104,7 @@ while True:
 
         else:
             print("Error: Please enter the correct value!")
-            continue
+
 
     if user_input_agreement in ["no", "n"]:
         break
