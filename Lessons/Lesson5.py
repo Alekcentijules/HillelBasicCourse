@@ -90,7 +90,7 @@ print(my_string, '\n')
 # .swapcase()
 my_string = "Python is awesome!"
 my_string = my_string.swapcase()
-print(my_string, '\n')
+print(".swapcase(): ", my_string, '\n')
 
 print('|', my_string.ljust(20, "*"), '|', sep='')
 print('|', my_string.rjust(20), '|', sep='')
@@ -107,7 +107,7 @@ print(my_string, '\n')
 # .split
 my_string = "I like Python"
 my_string = my_string.split("l")
-print(my_string, '\n')
+print(".split: ", my_string, '\n')
 
 my_string = "I like Python"
 my_string = my_string.split(" ")
@@ -126,7 +126,7 @@ print(lst, '\n')
 # .join
 my_lst = ['I', 'like', 'Python']
 _string = ''.join(my_lst)
-print(_string, '\n')
+print(".join: ", _string, '\n')
 
 my_str = "I like Python"
 _string = '_'.join(my_str)
@@ -152,7 +152,7 @@ print(type(x), '\n')
 
 # .strip
 my_string = "   I like Python!          "
-print(my_string)
+print(".strip: ", my_string)
 
 my_string = my_string.strip()
 print(my_string)
