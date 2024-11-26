@@ -37,6 +37,8 @@ end_letter = user_input[2]
 start_index = letters.index(start_letter)
 end_index = letters.index(end_letter)
 
+
+# Version 1
 for let in range(start_index, end_index):
     if let in range(len(letters)):
         my_letters.append(letters[let])
@@ -46,7 +48,11 @@ my_letters.append(end_letter)
 result = "".join(my_letters)
 
 # print(start_index, end_index)
-print(result)
+print(f'Version 1: {result} \n')
 
 
 
+# Version 2
+result = letters[start_index: end_index + 1]
+
+print(f'Version 2: {result}')
