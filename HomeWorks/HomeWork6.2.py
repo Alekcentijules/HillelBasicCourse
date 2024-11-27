@@ -1,8 +1,9 @@
 import string
 
 # user_input = input("Enter a number: ")
+cont_prog = True
 
-while True:
+while cont_prog:
     user_input = input("Enter a number: ")
 
     if user_input.isdigit():
@@ -14,19 +15,21 @@ while True:
 
         day = str(div).zfill(2)
         num = int(day[1])
+        day_str = ""
 
         if convert >= 0 and convert < 8640000:
             if num == 0 or (num >= 5 and num <= 9) or (div >= 11 and div <= 14):
-                print(f'{div} днів, {str(div2).zfill(2)}:{str(div3).zfill(2)}:{str(mod3).zfill(2)}')
-                break
+                day_str = "днів"
 
             elif num == 1:
-                print(f'{div} день, {str(div2).zfill(2)}:{str(div3).zfill(2)}:{str(mod3).zfill(2)}')
-                break
+                day_str = "день"
 
             elif num >= 2 and num <= 4:
-                print(f'{div} дні, {str(div2).zfill(2)}:{str(div3).zfill(2)}:{str(mod3).zfill(2)}')
-                break
+                day_str = "дні"
+
+            print(f'{div} {day_str}, {str(div2).zfill(2)}:{str(div3).zfill(2)}:{str(mod3).zfill(2)}')
+            cont_prog = False
+
         else:
             print("""Error: You're out of range!
             Please, enter a value an correct range""")
