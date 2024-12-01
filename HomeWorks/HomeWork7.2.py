@@ -1,6 +1,7 @@
 def correct_sentence(text):
     del_space = text.strip()
-    up = text[0].upper() + text[1:] if text else """You Can Do Anything. Start Programming.
+    up = text[0].upper() + text[1:] if text else """You Can Do Anything. 
+Start Programming.
 Programming is your superpower. You’re not just learning a skill; you’re mastering the art of creating reality.
 Every line of code is not just text; it’s a tool that can change the world. While others use technology, you have the
 power to build it. Mistakes? They’re not your enemies. They’re your teachers. Every bug is a step upward, and every 
