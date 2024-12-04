@@ -1,10 +1,12 @@
 import string
 
 def is_palindrome(text):
-    punk = list(string.punctuation)
-    palin = "".join(el for el in text if (el not in punk and not el.isdigit()) and not el == " ").lower()
+    # punk = list(string.punctuation)
+    # palin = "".join(el for el in text if (el not in punk and not el.isdigit()) and not el == " ").lower()
+    palin = "".join(el for el in text if el.isalpha()).lower()
 
     return True if palin == palin[::-1] else False
+
 
 user_input_palindrome = input("Enter a string palindrome: ")
 
