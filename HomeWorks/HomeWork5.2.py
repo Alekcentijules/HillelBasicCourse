@@ -109,6 +109,8 @@ while True:
     if user_input_agreement in ["no", "n"]:
         break
 
-
-
-
+# answ = 'y'
+# while answ in ('y', 'yes'):
+#     kod
+#
+#     answ = input('Continue? y/n: ').lower()
