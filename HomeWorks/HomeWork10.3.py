@@ -1,6 +1,7 @@
 def is_even(digit):
     """ Перевірка чи є парним число """
-    return (lambda d: True if d % 2 == 0 else False)(digit)
+    # return (lambda d: True if d % 2 == 0 else False)(digit)
+    return digit % 2 == 0
 
 user_input_num = int(input("Enter a number: "))
 result = is_even(user_input_num)
