@@ -6,7 +6,7 @@ def is_even(digit):
     # else:
     #     return False
 
-    return True if str(digit)[-1] in ("0", "2", "4", "6", "8") else False
+    return True if str(digit)[-1] in "02468" else False
 
 user_input_num = input("Enter a number: ")
 result = is_even(eval(user_input_num))
