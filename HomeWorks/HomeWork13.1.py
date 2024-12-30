@@ -38,8 +38,8 @@ class Group:
 
 
     def __str__(self):
-        all_students = "\n".join(str(student) for student in self.group)
-        return f'Number:{self.number}\n {all_students} '
+        all_students = "\n".join("  " + str(student) for student in self.group)
+        return f'Number:{self.number}\n{all_students} '
 
 
 st1 = Student('Male', 30, 'Steve', 'Jobs', 'AN142')
