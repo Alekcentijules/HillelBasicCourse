@@ -22,14 +22,13 @@ class Group:
 
     def __init__(self, number):
         self.number = number
-        # self.group = set()
-        self.group = []
+        self.group = set()
+        # self.group = []
 
     def add_student(self, student):
         if len(self.group) >= 10:
             raise GroupLimitError(f"Cannot add {student.first_name} {student.last_name}, because group is full")
-        if student not in self.group:
-            self.group.append(student)
+        self.group.add(student)
 
     def delete_student(self, last_name):
         student = self.find_student(last_name)
