@@ -22,12 +22,11 @@ class Group:
 
     def __init__(self, number):
         self.number = number
-        # self.group = set()
-        self.group = []
+        self.group = set()
+        # self.group = []
 
     def add_student(self, student):
-        if student not in self.group:
-            self.group.append(student)
+        self.group.add(student)
 
     def delete_student(self, last_name):
         student = self.find_student(last_name)
