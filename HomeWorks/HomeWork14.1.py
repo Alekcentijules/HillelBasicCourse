@@ -7,7 +7,7 @@ class Human:
         self.last_name = last_name
 
     def __str__(self):
-        return f"first name = {self.first_name}, last name = {self.last_name}, age = {self.age}, gender = {self.gender}"
+        return f"{self.first_name} {self.last_name}, age = {self.age}, gender = {self.gender}"
 
 class Student(Human):
 
@@ -68,7 +68,7 @@ gr.delete_student('Taylor')  # No error!
 
 try:
     for person in range(1, 12):
-        student = Student("Other", 22, "{}".format(person), "{}".format(person), "AN{}".format(person))
+        student = Student("Other", 22, "Tutti", "Frutti", "AN222")
         gr.add_student(student)
 except GroupLimitError as err:
     print(err)
