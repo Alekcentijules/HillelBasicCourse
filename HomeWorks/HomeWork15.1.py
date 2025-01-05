@@ -83,7 +83,7 @@ assert r2.get_square() == 18, "Test2 failed"
 r3 = r1 + r2
 print(r3)
 assert r3.get_square() == 27.6, "Test3 failed"
-print('OK')
+print('✨OKI-DOKI✨')
 
 
 
