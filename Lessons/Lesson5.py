@@ -169,7 +169,7 @@ my_string = my_string.lstrip("@")
 print(my_string)
 
 my_string = my_string.rstrip("!")
-print(my_string, '\n')
+print(".rstrip: ", my_string, '\n')
 
 my_string = "   I like Python!          "
 my_string = my_string.strip().strip("!").replace("i", "I")

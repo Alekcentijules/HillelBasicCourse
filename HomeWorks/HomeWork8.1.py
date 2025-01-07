@@ -8,6 +8,7 @@ def add_one(some_list):
     # do_lst = [n for n in str(num)]
 
     num = int("".join(str(el) for el in some_list).replace(",", "").replace(" ", "").strip()) + 1
+    # map(str, some_list)
 
     # print(num)
     # return [int(s) for s in do_lst] if truth_test else "Enter at least of one digit!"
