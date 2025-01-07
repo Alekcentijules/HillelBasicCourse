@@ -380,12 +380,17 @@ for i in lst:
 
     dict_one[i] = dict_one.get(i, 0) + 1
 
+
 print(dict_one, '\n')
 
 
 
-
-
+# my_dict = {}
+# my_dict.setdefault(key, "One")
+# # my_dict.setdefault(key, []).append(4)
+#
+#
+# print(my_dict)
 
 
 
