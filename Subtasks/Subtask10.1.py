@@ -5,9 +5,10 @@ def counter(func):
         nonlocal count
         count += 1
         print(f"Count of function: {count}")
-        result = func(*args, **kwargs)
-        return result
+        func(*args, **kwargs)
+        return count
 
+    # wrapper.count = lambda: count
     return wrapper
 
 @counter
