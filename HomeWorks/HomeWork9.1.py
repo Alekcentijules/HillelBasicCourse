@@ -1,9 +1,9 @@
 import string
 
 def popular_words (text, words):
-    dict_words = {}
+    # dict_words = {}
     # words_in_text = text.lower().replace([string.punctuation], "").split(" ")
-    words_in_text = "".join(w if w not in string.punctuation else " " for w in text).lower().split()
+    # words_in_text = "".join(w if w not in string.punctuation else " " for w in text).lower().split()
 
     # count = 0
     # for w in words:
@@ -15,10 +15,12 @@ def popular_words (text, words):
     #         dict_words.setdefault(w, 0)
     #         dict_words[w] += 1
 
-    for w in words:
-        dict_words[w] = words_in_text.count(w)
+    # for w in words:
+    #     dict_words[w] = words_in_text.count(w)
+    text = text.lower().split()
+    result = {word: text.count(word) for word in words}
 
-    return dict_words
+    return result
 
 
 # some_text = '''When I was One I had just begun When I was Two I was nearly new'''

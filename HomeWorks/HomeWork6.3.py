@@ -59,7 +59,15 @@ while digits > 9:
 print(digits)
 
 
+# Version 2
 
+digit = input("Enter a number: ")
+
+while len(digit) > 1:
+    tmp = "*".join(digit)
+    digit = str(eval(tmp))
+
+print(digit)
 
 
 

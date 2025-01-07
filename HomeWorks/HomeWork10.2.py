@@ -3,11 +3,15 @@ import string
 
 def first_word(text):
     """ Пошук першого слова """
-    punk = string.punctuation.replace("'", "").replace(" ", "")
-    del_punc = [i.replace(i, " ") if i in punk else i for i in text]
-    words = "".join(del_punc).strip().split()
+    # punk = string.punctuation.replace("'", "").replace(" ", "")
+    # del_punc = [i.replace(i, " ") if i in punk else i for i in text]
+    # words = "".join(del_punc).strip().split()
 
-    return words[0]
+    # return words[0]
+
+    text = text.replace('.', " ").replace(",", " ").split()
+
+    return text[0]
 
 user_input = input("Enter a text: ")
 result = first_word(user_input)
